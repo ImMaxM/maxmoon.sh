@@ -1,2 +1,5 @@
-# maxuk.me
-💻 The repository behind my portfolio site (maxuk.me)
+# [maxuk.me](https://maxuk.me)
+
+Portfolio written with Next.JS and TailwindCSS
+
+##### Design inspiration from [cnrad.dev](https://cnrad.dev)
