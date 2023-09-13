@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/stats/js/script.js",
+      "destination": "https://web.maxuk.me/js/script.js"
+    },
+    {
+      "source": "/stats/api/event",
+      "destination": "https://web.maxuk.me/api/event"
+    }
+  ]
+}

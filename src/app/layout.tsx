@@ -26,6 +26,10 @@ export default function RootLayout({
         <PlausibleProvider
           domain="maxuk.me"
           customDomain="https://web.maxuk.me"
+          scriptProps={{
+            src: "/stats/js/script.js",
+            "data-api": "/stats/api/event",
+          }}
           selfHosted={true}
           trackOutboundLinks={true}
         />
