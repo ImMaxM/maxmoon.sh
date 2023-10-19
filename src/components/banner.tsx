@@ -7,14 +7,14 @@ const Banner = () => {
   return (
     <div className="relative">
       <Image
-        className="rounded-lg"
+        className="rounded-lg hidden md:block"
         src={BannerImage}
         alt="Space Banner"
         quality={100}
         priority={true}
       />
       <Image
-        className="absolute bottom-0 left-14 translate-y-1/2 transform rounded-full border-6 border-background"
+        className="md:absolute bottom-0 left-14 md:translate-y-1/2 transform rounded-full border-6 border-background"
         src={AvatarImage}
         alt="Avatar"
         width={140}
