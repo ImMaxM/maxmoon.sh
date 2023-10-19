@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const { withPlausibleProxy } = require('next-plausible')
 
-module.exports = nextConfig
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {}
+
+module.exports = withPlausibleProxy()({
+
+})

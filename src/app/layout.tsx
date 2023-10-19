@@ -26,6 +26,7 @@ export default function RootLayout({
         <PlausibleProvider
           domain="maxuk.me"
           customDomain="https://web.maxuk.me"
+          
           selfHosted={true}
           trackOutboundLinks={true}
         />
