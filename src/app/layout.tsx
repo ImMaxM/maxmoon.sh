@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          defer
+          defer={true}
           data-domain="maxuk.me"
           src="https://maxuk.me/js/script.js"
         ></script>
