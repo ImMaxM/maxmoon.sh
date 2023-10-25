@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import BannerImage from "../../public/banner.png";
 import AvatarImage from "../../public/avatar.png";
+import Spotify from "./spotify";
 
 const Banner = () => {
   return (
@@ -20,6 +21,9 @@ const Banner = () => {
         width={140}
         priority={true}
       />
+      {/* <div className="float-right pr-6 pt-4">
+        <Spotify />
+      </div> */}
     </div>
   );
 };
