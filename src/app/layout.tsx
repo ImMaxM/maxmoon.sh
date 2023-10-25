@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import PlausibleProvider from "next-plausible";
 
 const JBM = JetBrains_Mono({
   subsets: ["latin"],
@@ -23,13 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <PlausibleProvider
-          domain="maxuk.me"
-          customDomain="https://web.maxuk.me"
-          
-          selfHosted={true}
-          trackOutboundLinks={true}
-        />
+        <script
+          defer
+          data-domain="maxuk.me"
+          src="https://maxuk.me/js/script.js"
+        ></script>
       </head>
       <body className={JBM.className}>{children}</body>
     </html>
