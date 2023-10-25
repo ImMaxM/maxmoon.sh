@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/stats/js/script.js",
-      "destination": "https://web.maxuk.me/js/script.js"
+      "destination": "https://plausible.io/js/script.js"
     },
     {
       "source": "/stats/api/event",
-      "destination": "https://web.maxuk.me/api/event"
+      "destination": "https://plausible.io/api/event"
     }
   ]
 }

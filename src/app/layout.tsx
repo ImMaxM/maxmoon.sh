@@ -23,9 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          defer
+          src="/stats/js/script.js"
+          data-api="/stats/api/event"
           data-domain="maxuk.me"
-          src="https://maxuk.me/js/script.js"
         ></script>
       </head>
       <body className={JBM.className}>{children}</body>
