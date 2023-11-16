@@ -18,6 +18,9 @@ const config: Config = {
       borderWidth: {
         '6': '6px',
       },
+      animation: {
+        'spin-slow': 'spin 5s linear infinite'
+      }
     },
     plugins: [],
   }
