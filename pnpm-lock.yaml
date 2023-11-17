@@ -47,6 +47,9 @@ dependencies:
   typescript:
     specifier: 5.1.6
     version: 5.1.6
+  use-lanyard:
+    specifier: ^1.5.1
+    version: 1.5.1(react-dom@18.2.0)(react@18.2.0)
 
 packages:
 
@@ -2456,6 +2459,17 @@ packages:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
       punycode: 2.3.0
+    dev: false
+
+  /use-lanyard@1.5.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-hckARF80zWduwplQQ56RqHfsU7pqP0m69Wd3XYvFuz0zXM5ssoDT7eECPgps4oZ+C2SXK+Z/MgEbGfJQ2ZIyNA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /util-deprecate@1.0.2:

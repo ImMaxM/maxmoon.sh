@@ -26,7 +26,7 @@ const TechBar = () => {
   return (
     <div className="items-center align-middle">
       <div className="flex flex-row items-center justify-between mx-auto w-fit px-2 py-2 bg-box rounded-md border-2 border-stroke">
-        <div className="flex font-body flex-wrap gap-x-2.5 mx-2 justify-evenly">
+        <div className="flex font-body flex-wrap gap-2.5 mx-auto justify-evenly">
           {tech.map((item, index) => (
             <div key={index}>
               <a

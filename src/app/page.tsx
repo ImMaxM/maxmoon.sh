@@ -11,7 +11,7 @@ export default function Home() {
       <div className="w-full max-w-[900px]">
         <Banner />
       </div>
-      <div className="flex flex-col w-full max-w-[840px] gap-8 pt-8 text-white">
+      <div className="flex flex-col w-full max-w-[840px] gap-8 text-white">
         <Hero />
         <About />
         <Tech />
