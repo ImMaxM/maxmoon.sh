@@ -70,7 +70,7 @@ const Spotify = () => {
             alt="Album Art"
           />
           <div>
-            <p>{timestamps.fName} </p>
+            <a href={"https://open.spotify.com/track/" + data.spotify.track_id} target="_blank">{timestamps.fName} </a>
             <div className="flex items-center mt-2 min-w-[300px]">
               <span className="mr-2 text-secondary text-xs">
                 {" "}
