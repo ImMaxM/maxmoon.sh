@@ -21,7 +21,7 @@ const Banner = () => {
         width={140}
         priority={true}
       />
-      <div className="hidden md:block float-right pr-6 pt-4">
+      <div className="absolute hidden md:block right-2 pr-6 pt-4">
         <Spotify />
       </div>
     </div>
