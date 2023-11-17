@@ -71,7 +71,7 @@ const Spotify = () => {
           />
           <div>
             <p>{timestamps.fName} </p>
-            <div className="flex items-center mt-2">
+            <div className="flex items-center mt-2 min-w-[300px]">
               <span className="mr-2 text-secondary text-xs">
                 {" "}
                 {Math.floor(timestamps.secondsElapsed / 60)}:
