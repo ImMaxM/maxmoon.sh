@@ -49,6 +49,12 @@ const Spotify = () => {
   useEffect(() => {
     // Update every second
     const intervalId = setInterval(() => {
+      if (timestamps.secondsElapsed > timestamps.secondsTotal) {
+        setTimestamps((prevTimestamps) => ({
+          ...prevTimestamps,
+          secondsElapsed: 0,
+        }));
+      }
       setTimestamps((prevTimestamps) => ({
         ...prevTimestamps,
         secondsElapsed: prevTimestamps.secondsElapsed + 1,
@@ -70,7 +76,12 @@ const Spotify = () => {
             alt="Album Art"
           />
           <div>
-            <a href={"https://open.spotify.com/track/" + data.spotify.track_id} target="_blank">{timestamps.fName} </a>
+            <a
+              href={"https://open.spotify.com/track/" + data.spotify.track_id}
+              target="_blank"
+            >
+              {timestamps.fName}{" "}
+            </a>
             <div className="flex items-center mt-2 min-w-[300px]">
               <span className="mr-2 text-secondary text-xs">
                 {" "}
