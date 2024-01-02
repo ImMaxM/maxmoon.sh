@@ -18,9 +18,13 @@ const ProjectCards = () => {
   const [projects, setProjects] = useState<Projects[]>([]);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/ImMaxM/repos?sort=stars&per_page=4")
+    fetch("https://api.github.com/users/ImMaxM/repos?per_page=4")
       .then((res) => res.json())
+      .then((data) =>
+        data.sort((a: any, b: any) => b.stargazers_count - a.stargazers_count)
+      )
       .then((data) => {
+        console.log(data);
         setProjects(data);
         setLoading(false);
       });
