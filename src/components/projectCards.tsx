@@ -34,7 +34,7 @@ const ProjectCards = () => {
 
   const projectCards = projects.map((project) => (
     <a href={project.html_url} target="_blank" key={project.id}>
-      <div className="p-4 flex items-center rounded-md border-2 border-stroke">
+      <div className="p-4 flex min-h-full rounded-md border-2 border-stroke">
         <div className="text-white font-body">
           <a className="font-normal">ImMaxM/{project.name}</a>
           <div className="flex flex-col">
