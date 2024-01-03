@@ -24,7 +24,6 @@ const ProjectCards = () => {
         data.sort((a: any, b: any) => b.stargazers_count - a.stargazers_count)
       )
       .then((data) => {
-        console.log(data);
         setProjects(data);
         setLoading(false);
       });
