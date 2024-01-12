@@ -1,31 +1,30 @@
 "use client";
 
-import React from "react";
 import {
-  SiTypescript,
   SiDocker,
-  SiVisualstudiocode,
-  SiReact,
-  SiNodedotjs,
-  SiJavascript,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiPrisma,
-  SiUbuntu,
-  SiGit,
-  SiRedis,
   SiFigma,
-  SiNginx,
-  SiPython,
-  SiLua,
+  SiGit,
   SiGnubash,
+  SiJavascript,
+  SiLua,
+  SiNextdotjs,
+  SiNginx,
+  SiNodedotjs,
+  SiPrisma,
+  SiPython,
+  SiReact,
+  SiRedis,
+  SiTailwindcss,
+  SiTypescript,
+  SiUbuntu,
+  SiVisualstudiocode,
 } from "react-icons/si";
 import { Tooltip } from "react-tooltip";
 
 const TechBar = () => {
   return (
-    <div className="items-center align-middle">
-      <div className="flex flex-row items-center justify-between mx-auto w-fit px-2 py-2 bg-box rounded-md border-2 border-stroke">
+    <div className="items-center align-middle px-4">
+      <div className="flex flex-row items-center justify-between mx-auto px-2 py-2 bg-box rounded-md border-2 border-stroke">
         <div className="flex font-body flex-wrap gap-2.5 mx-auto justify-evenly">
           {tech.map((item, index) => (
             <div key={index}>
