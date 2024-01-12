@@ -24,7 +24,7 @@ import { Tooltip } from "react-tooltip";
 const TechBar = () => {
   return (
     <div className="items-center align-middle px-4">
-      <div className="flex flex-row items-center justify-between mx-auto px-2 py-2 bg-box rounded-md border-2 border-stroke">
+      <div className="flex flex-row items-center justify-between mx-auto px-2 py-2 bg-background rounded-md border-2 border-stroke">
         <div className="flex font-body flex-wrap gap-2.5 mx-auto justify-evenly">
           {tech.map((item, index) => (
             <div key={index}>

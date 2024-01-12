@@ -1,10 +1,10 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -13,17 +13,17 @@ const config: Config = {
         primary: "#FFFFFF",
         secondary: "#BFBFBF",
         accent: "#5D56AB",
-        stroke: "#162138"
+        stroke: "#162138",
       },
       borderWidth: {
-        '6': '6px',
+        "6": "6px",
       },
       animation: {
-        'spin-slow': 'spin 5s linear infinite'
-      }
+        "spin-slow": "spin 5s linear infinite",
+      },
     },
     plugins: [],
-  }
-}
+  },
+};
 
-export default config
+export default config;

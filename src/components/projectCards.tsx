@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import CardLoading from "./cardsLoading";
+import { useEffect, useState } from "react";
 import { FaCodeBranch, FaStar } from "react-icons/fa";
+import CardLoading from "./cardsLoading";
 
 interface Projects {
   id: number;
@@ -33,9 +33,9 @@ const ProjectCards = () => {
 
   const projectCards = projects.map((project) => (
     <a href={project.html_url} target="_blank" key={project.id}>
-      <div className="p-4 flex min-h-full rounded-md border-2 border-stroke">
+      <div className="p-4 min-h-full rounded-md border-2 border-stroke bg-background">
         <div className="text-white font-body">
-          <a className="font-normal">ImMaxM/{project.name}</a>
+          <p className="font-normal">ImMaxM/{project.name}</p>
           <div className="flex flex-col">
             {/* If the project descriptions spans more than 2 lines, cut it off with ... */}
             <p
