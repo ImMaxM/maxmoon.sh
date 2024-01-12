@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import spotifyDefault from "../../public/spotify.png";
 
@@ -107,7 +107,7 @@ const Spotify = () => {
           </div>
         </div>
       ) : (
-        <p>Not listening to anything...</p>
+        <p className="text-secondary pt-2">Not listening to anything...</p>
       )}
     </div>
   );
