@@ -8,7 +8,10 @@ import Tech from "@/components/tech";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 md:p-16 bg-background">
-      <div className="absolute" style={{ pointerEvents: "none" }}>
+      <div
+        className="hidden md:block absolute"
+        style={{ pointerEvents: "none" }}
+      >
         <svg
           width="1195"
           height="1486"
