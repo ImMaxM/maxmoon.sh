@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 md:p-16 bg-background">
       <div
-        className="hidden md:block absolute"
+        className="hidden md:block absolute z-5"
         style={{ pointerEvents: "none" }}
       >
         <svg
@@ -88,7 +88,7 @@ export default function Home() {
       <div className="w-full max-w-[900px]">
         <Banner />
       </div>
-      <div className="flex flex-col w-full max-w-[840px] gap-8 text-white">
+      <div className="flex flex-col w-full max-w-[840px] gap-8 text-white z-10">
         <Hero />
         <About />
         <Tech />
