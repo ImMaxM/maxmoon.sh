@@ -1,6 +1,6 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import "./globals.css";
 
 const JBM = JetBrains_Mono({
   subsets: ["latin"],
@@ -23,9 +23,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          src="/stats/js/script.js"
-          data-api="/stats/api/event"
+          src="https://maxuk.me/stats/js/script.js"
+          // data-api="/stats/api/event"
           data-domain="maxuk.me"
+          defer
         ></script>
       </head>
       <body className={JBM.className}>{children}</body>
