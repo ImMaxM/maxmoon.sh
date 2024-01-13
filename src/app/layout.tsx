@@ -25,7 +25,7 @@ export default function RootLayout({
         <script
           defer
           data-domain="maxuk.me"
-          src="https://web.maxuk.me/js/script.js"
+          src="https://web.maxuk.me/js/script.outbound-links.js"
         ></script>
       </head>
       <body className={JBM.className}>{children}</body>
