@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-const { withPlausibleProxy } = require('next-plausible')
-
-module.exports = withPlausibleProxy()({
+module.exports = {
     images: {
         remotePatterns: [
             {
@@ -13,4 +11,4 @@ module.exports = withPlausibleProxy()({
             },
         ],
     },
-})
+}
