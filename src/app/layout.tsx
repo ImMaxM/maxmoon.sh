@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PlausibleProvider from "next-plausible";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -22,12 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          src="https://maxuk.me/stats/js/script.js"
-          // data-api="/stats/api/event"
-          data-domain="maxuk.me"
-          defer
-        ></script>
+        <PlausibleProvider
+          domain="maxuk.me"
+          // trackLocalhost={true}
+          selfHosted={true}
+          customDomain="https://web.maxuk.me"
+        />
       </head>
       <body className={JBM.className}>{children}</body>
     </html>
