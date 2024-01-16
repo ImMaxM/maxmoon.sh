@@ -3,7 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const JBM = JetBrains_Mono({
-  subsets: ["latin"],
+  subsets: ["latin-ext"],
   display: "swap",
 });
 
