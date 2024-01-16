@@ -77,6 +77,7 @@ const Spotify = () => {
           />
           <div>
             <a
+              className="block"
               href={"https://open.spotify.com/track/" + data.spotify.track_id}
               target="_blank"
             >

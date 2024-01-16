@@ -85,7 +85,7 @@ export default function Home() {
           </defs>
         </svg>
       </div>
-      <div className="w-full max-w-[900px]">
+      <div className="w-full max-w-[900px] z-20">
         <Banner />
       </div>
       <div className="flex flex-col w-full max-w-[840px] gap-8 text-white z-10">
