@@ -79,6 +79,8 @@ const Spotify = () => {
             <a
               className="block"
               href={"https://open.spotify.com/track/" + data.spotify.track_id}
+              data-umami-event="Spotify Track"
+              data-umami-event-track-id={data.spotify.track_id}
               target="_blank"
             >
               {timestamps.fName}{" "}

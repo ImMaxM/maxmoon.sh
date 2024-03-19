@@ -32,7 +32,14 @@ const ProjectCards = () => {
   const loadingCards = [1, 2, 3, 4].map((n) => <CardLoading key={n} />);
 
   const projectCards = projects.map((project) => (
-    <a href={project.html_url} target="_blank" key={project.id}>
+    <a
+      href={project.html_url}
+      target="_blank"
+      key={project.id}
+      data-umami-event="Project Card"
+      data-umami-event-repository-name={project.name}
+      data-umami-event-repository-url={project.html_url}
+    >
       <div className="p-4 min-h-full rounded-md border-2 border-stroke bg-background">
         <div className="text-white font-body">
           <p className="font-normal">ImMaxM/{project.name}</p>
