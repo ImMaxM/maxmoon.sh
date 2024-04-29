@@ -87,7 +87,7 @@ export default function Home() {
         </svg>
       </div>
       <div className="w-full max-w-[900px] z-20">
-        {/* <NavBar /> */}
+        <NavBar />
         <Banner />
       </div>
       <div className="flex flex-col w-full max-w-[840px] gap-8 text-white z-10">
