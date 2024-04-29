@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import BannerImage from "../../public/banner.png";
-import AvatarImage from "../../public/avatar.png";
+import BannerImage from "../../public/images/banner.png";
+import AvatarImage from "../../public/images/avatar.png";
 import Spotify from "./spotify";
 
 const Banner = () => {

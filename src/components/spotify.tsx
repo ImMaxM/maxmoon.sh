@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import spotifyDefault from "../../public/spotify.png";
+import spotifyDefault from "../../public/images/spotify.png";
 
 import { Data, useLanyardWS } from "use-lanyard";
 
