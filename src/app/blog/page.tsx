@@ -4,7 +4,6 @@ import Footer from "@/components/ui/footer";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import Tech from "@/components/tech";
-import NavBar from "@/components/ui/navbar";
 
 export default function Page() {
   return (
@@ -86,9 +85,7 @@ export default function Page() {
           </defs>
         </svg>
       </div>
-      <div className="w-full max-w-[900px] z-20">
-        <NavBar />
-      </div>
+
       {/* Footer */}
       <Footer />
     </main>

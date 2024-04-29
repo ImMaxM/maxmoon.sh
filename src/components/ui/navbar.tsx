@@ -29,18 +29,14 @@ const navItems = [
 export default function NavBar() {
   let pathname = usePathname() || "/";
 
-  if (pathname.includes("/writing/")) {
-    pathname = "/writing";
-  }
-
   const [hoveredPath, setHoveredPath] = useState(pathname);
 
   return (
-    <div className="border-box border-2 p-[0.4rem] rounded-lg mb-12 sticky top-4 z-[100] bg-transparent backdrop-blur-md min-w-screen">
+    <div className="border-box border-2 p-[0.4rem] rounded-lg mb-12 z-[100] bg-transparent backdrop-blur-lg min-w-screen">
       <nav className="flex gap-8 relative justify-start w-full z-[100] rounded-lg">
         {navItems.map((item, index) => {
           const isActive = item.path === pathname;
-          
+
           return (
             <Link
               key={item.path}
