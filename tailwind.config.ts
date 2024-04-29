@@ -12,8 +12,10 @@ const config: Config = {
         background: "#0C111B",
         primary: "#FFFFFF",
         secondary: "#BFBFBF",
+        box: "#111929",
         accent: "#5D56AB",
         stroke: "#162138",
+        selected: "#151F34",
       },
       borderWidth: {
         "6": "6px",
