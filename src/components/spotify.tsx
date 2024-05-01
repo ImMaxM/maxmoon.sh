@@ -15,6 +15,8 @@ const Spotify = () => {
     secondsTotal: 0,
   });
 
+  const [isImageLoading, setIsImageLoading] = useState<boolean>(true);
+
   const lanyard = useLanyardWS(userId);
 
   useEffect(() => {
@@ -69,11 +71,24 @@ const Spotify = () => {
       {data?.spotify?.song ? (
         <div className="flex flex-row flex-wrap gap-x-4">
           <Image
-            className="rounded-full animate-spin-slow"
+            className={`rounded-full animate-spin-slow ${
+              isImageLoading ? "" : "hidden"
+            }`}
             src={data?.spotify?.album_art_url || spotifyDefault}
             width={48}
             height={48}
             alt="Album Art"
+            onLoad={() => setIsImageLoading(true)}
+            onError={() => setIsImageLoading(false)}
+          />
+          <Image
+            className={`rounded-full animate-spin-slow ${
+              isImageLoading ? "hidden" : ""
+            }`}
+            src={spotifyDefault}
+            width={48}
+            height={48}
+            alt="Placeholder"
           />
           <div>
             <a
