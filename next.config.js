@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-    distDir: 'build',
+    // distDir: 'build',
     images: {
         remotePatterns: [
             {
