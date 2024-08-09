@@ -73,7 +73,7 @@ const Spotify = () => {
           className={`flex flex-row flex-wrap gap-x-4 ${isLoaded ? "animate-fade-in-small" : "opacity-0"}`}
         >
           <Image
-            className="rounded-full"
+            className="animate-spin-slow rounded-full"
             src={data?.spotify?.album_art_url || spotifyDefault}
             width={40}
             height={40}

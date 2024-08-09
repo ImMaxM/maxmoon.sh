@@ -9,20 +9,20 @@ export default {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-out forwards',
-        'spin-slow': 'spin 5s linear infinite',
+        "fade-in": "fadeIn 0.5s ease-out forwards",
+        "spin-slow": "spin 5s linear infinite",
       },
       colors: {
-        "background": "#0C111B",
-        "primary": "#F5F5F5",
-        "secondary": "#BFBFBF",
-        "spotify": "#1ED760",
+        background: "#0C111B",
+        primary: "#F5F5F5",
+        secondary: "#BFBFBF",
+        spotify: "#1ED760",
       },
     },
   },
   variants: {
     extend: {
-      animation: ['motion-safe'],
+      animation: { "spin-slow": "spin 5s linear infinite" },
     },
   },
   plugins: [],
