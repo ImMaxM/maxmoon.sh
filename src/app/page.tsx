@@ -19,8 +19,8 @@ export default function Home() {
     <main className="min-h-screen bg-background text-white">
       <script
         defer
-        src="https://web.maxuk.me/script.js"
-        data-website-id="2f275dcd-8929-4fed-9d9f-93038325f71d"
+        src="https://web.maxmoon.sh/script.js"
+        data-website-id="f0692a46-2e34-4c9e-997f-bc91eaa03614"
       ></script>
       <div className="mx-auto max-w-3xl py-12">
         <Hero isVisible={isLoaded} delay={0} />
