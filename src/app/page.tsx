@@ -20,7 +20,7 @@ export default function Home() {
       <script
         defer
         src="https://web.maxmoon.sh/script.js"
-        data-website-id="f0692a46-2e34-4c9e-997f-bc91eaa03614"
+        data-website-id="93fdf6d3-da9a-4f58-ac94-6e0536673641"
       ></script>
       <div className="mx-auto max-w-3xl py-12">
         <Hero isVisible={isLoaded} delay={0} />
