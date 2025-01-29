@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-background text-white">
+    <main className="min-h-screen text-white">
       <script
         defer
         src="https://web.maxmoon.sh/script.js"
