@@ -31,10 +31,10 @@ const repos: Repo[] = [
   },
   {
     id: 2,
-    name: "F1Scout/Bot",
+    name: "GridScout/Bot",
     description:
       "🏎️ A Discord bot that can help you find information about your favorite F1 drivers & more.",
-    html_url: "https://github.com/F1Scout/Bot",
+    html_url: "https://github.com/GridScout/Bot",
     image: F1ScoutImage.src,
   },
   {
