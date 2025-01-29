@@ -51,7 +51,7 @@ export default function Technology({ isVisible, delay }: TechnologyProps) {
               </div>
             ) : (
               <>
-                <tool.icon className="mr-2 rounded-sm text-xl" />
+                <tool.icon className="mr-2 flex-shrink-0 rounded-sm text-xl" />
                 <span>{tool.name}</span>
               </>
             )}
