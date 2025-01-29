@@ -1,10 +1,8 @@
-import { FaStar } from "react-icons/fa";
-import { RiGitForkLine } from "react-icons/ri";
+import Image from "next/image";
 
 import F1ScoutImage from "../../../public/images/f1scout.png";
 import MCStorageImage from "../../../public/images/mcstorage.png";
 import PortfolioImage from "../../../public/images/portfolio.png";
-import Image from "next/image";
 
 interface ProjectsProps {
   isVisible: boolean;
@@ -80,7 +78,7 @@ export default function Projects({ isVisible, delay }: ProjectsProps) {
                 <h3 className="text-base font-medium text-primary">
                   {repo.name}
                 </h3>
-                <p className="line-clamp-2 text-sm font-normal text-secondary">
+                <p className="line-clamp-3 text-sm font-normal text-secondary">
                   {repo.description}
                 </p>
               </div>
