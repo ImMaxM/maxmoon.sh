@@ -17,10 +17,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen text-white">
-<<<<<<< HEAD
-=======
-     <script defer data-domain="maxmoon.sh" src="https://web.maxmoon.sh/js/script.outbound-links.js"></script>
->>>>>>> 8ce50b58872ad81f2d8f97745b8a501535662753
       <div className="mx-auto max-w-3xl py-12">
         <Hero isVisible={isLoaded} delay={0} />
         <div className="px-8">
