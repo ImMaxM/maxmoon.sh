@@ -7,7 +7,6 @@ import localFont from "next/font/local";
 const Satoshi = localFont({ src: "../../public/fonts/satoshi.woff2" });
 
 import { Viewport } from "next";
-import PlausibleProvider from "next-plausible";
 
 export const viewport: Viewport = {
   themeColor: "#5D56AB",
@@ -25,15 +24,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${Satoshi.className} bg-background`}>
-      <body>
-        <PlausibleProvider
-          domain="maxmoon.sh"
-          customDomain="https://web.maxmoon.sh"
-          trackOutboundLinks={true}
-        >
-          {children}
-        </PlausibleProvider>
-      </body>
+      <head>
+        <script
+          defer
+          src="https://web.maxmoon.sh/script.js"
+          data-website-id="93fdf6d3-da9a-4f58-ac94-6e0536673641"
+        ></script>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
