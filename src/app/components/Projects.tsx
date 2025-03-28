@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import F1ScoutImage from "../../../public/images/f1scout.png";
+import GridScoutImage from "../../../public/images/gridscout.png";
 import MCStorageImage from "../../../public/images/mcstorage.png";
 import PortfolioImage from "../../../public/images/portfolio.png";
 
@@ -20,20 +20,20 @@ interface Repo {
 const repos: Repo[] = [
   {
     id: 1,
+    name: "GridScout/GridScout",
+    description:
+      "🏎️ A Discord bot that can help you find information about your favorite F1 drivers & more.",
+    html_url: "https://github.com/GridScout/GridScout",
+    image: GridScoutImage.src,
+  },
+  {
+    id: 2,
     name: "MCStorage",
     description:
       "MCStorage was a BaaS provider I created with a friend. It integrated directly into Minecraft to provide a seamless backup experience. We later sold the project, and it is now under different management.",
     html_url:
       "https://web.archive.org/web/20220306183052/https://mcstorage.cloud/",
     image: MCStorageImage.src,
-  },
-  {
-    id: 2,
-    name: "GridScout/Bot",
-    description:
-      "🏎️ A Discord bot that can help you find information about your favorite F1 drivers & more.",
-    html_url: "https://github.com/GridScout/Bot",
-    image: F1ScoutImage.src,
   },
   {
     id: 3,
