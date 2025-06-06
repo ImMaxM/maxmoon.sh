@@ -24,6 +24,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${Satoshi.className} bg-background`}>
+      <head>
+        <script
+          defer
+          src="https://web.maxmoon.sh/script.js"
+          data-website-id="93fdf6d3-da9a-4f58-ac94-6e0536673641"
+        ></script>
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import F1ScoutImage from "../../../public/images/f1scout.png";
+import GridScoutImage from "../../../public/images/gridscout.png";
 import MCStorageImage from "../../../public/images/mcstorage.png";
 import PortfolioImage from "../../../public/images/portfolio.png";
 
@@ -30,11 +30,11 @@ interface ApiResponse {
 const repos: Repo[] = [
   {
     id: 1,
-    name: "GridScout/Bot",
+    name: "GridScout/GridScout",
     description:
       "🏎️ A Discord bot that can help you find information about your favorite F1 drivers & more.",
-    html_url: "https://github.com/GridScout/Bot",
-    image: F1ScoutImage.src,
+    html_url: "https://github.com/GridScout/GridScout",
+    image: GridScoutImage.src,
   },
   {
     id: 2,
