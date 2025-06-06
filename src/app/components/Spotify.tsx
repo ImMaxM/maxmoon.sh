@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 
 import spotifyDefault from "../../../public/images/spotify.png";
 
-import { Data, useLanyardWS } from "use-lanyard";
+import { Types, useLanyardWS } from "use-lanyard";
 
 const Spotify = () => {
   const userId = "866686984587313173";
-  const [data, setData] = useState<Data | null>(null);
+  const [data, setData] = useState<Types.Presence | null>(null);
   const [timestamps, setTimestamps] = useState({
     fName: "",
     secondsElapsed: 0,
