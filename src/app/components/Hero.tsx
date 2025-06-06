@@ -1,7 +1,7 @@
 import Image from "next/image";
 import banner from "../../../public/images/banner.png";
 import avatar from "../../../public/images/avatar.png";
-import Spotify from "./Spotify";
+import Music from "./Music";
 
 interface HeroProps {
   isVisible: boolean;
@@ -29,7 +29,7 @@ export default function Hero({ isVisible, delay }: HeroProps) {
         className="absolute left-6 rounded-full border-[6px] border-background md:-bottom-16"
       />
       <div className="absolute right-2 hidden pr-6 pt-4 md:block">
-        <Spotify />
+        <Music />
       </div>
     </div>
   );
