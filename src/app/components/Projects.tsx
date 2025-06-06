@@ -4,6 +4,10 @@ import F1ScoutImage from "../../../public/images/f1scout.png";
 import MCStorageImage from "../../../public/images/mcstorage.png";
 import PortfolioImage from "../../../public/images/portfolio.png";
 
+import { SiDiscord } from "react-icons/si";
+
+import { useEffect, useState } from "react";
+
 interface ProjectsProps {
   isVisible: boolean;
   delay: number;
@@ -15,25 +19,31 @@ interface Repo {
   description: string;
   html_url: string;
   image: string;
+  count?: number;
+}
+
+interface ApiResponse {
+  success: boolean;
+  installCount: number;
 }
 
 const repos: Repo[] = [
   {
     id: 1,
+    name: "GridScout/Bot",
+    description:
+      "🏎️ A Discord bot that can help you find information about your favorite F1 drivers & more.",
+    html_url: "https://github.com/GridScout/Bot",
+    image: F1ScoutImage.src,
+  },
+  {
+    id: 2,
     name: "MCStorage",
     description:
       "MCStorage was a BaaS provider I created with a friend. It integrated directly into Minecraft to provide a seamless backup experience. We later sold the project, and it is now under different management.",
     html_url:
       "https://web.archive.org/web/20220306183052/https://mcstorage.cloud/",
     image: MCStorageImage.src,
-  },
-  {
-    id: 2,
-    name: "GridScout/Bot",
-    description:
-      "🏎️ A Discord bot that can help you find information about your favorite F1 drivers & more.",
-    html_url: "https://github.com/GridScout/Bot",
-    image: F1ScoutImage.src,
   },
   {
     id: 3,
@@ -45,6 +55,33 @@ const repos: Repo[] = [
 ];
 
 export default function Projects({ isVisible, delay }: ProjectsProps) {
+  const [projectsData, setProjectsData] = useState<Repo[]>(repos);
+
+  useEffect(() => {
+    async function fetchServerCount() {
+      try {
+        const response = await fetch("/api/gridscout");
+        if (!response.ok) {
+          throw new Error("Failed to fetch server count");
+        }
+
+        const data: ApiResponse = await response.json();
+
+        setProjectsData((currentProjects) =>
+          currentProjects.map((project) =>
+            project.id === 1
+              ? { ...project, count: data.installCount }
+              : project,
+          ),
+        );
+      } catch (error) {
+        console.error("Error fetching server count:", error);
+      }
+    }
+
+    fetchServerCount();
+  }, []);
+
   return (
     <section
       className={`mb-8 opacity-0 ${isVisible ? "animate-fade-in" : ""}`}
@@ -57,7 +94,7 @@ export default function Projects({ isVisible, delay }: ProjectsProps) {
         projects below:
       </p>
       <div className="mt-2 flex flex-col gap-4 pt-4">
-        {repos.map((repo) => (
+        {projectsData.map((repo) => (
           <div key={repo.id} className="flex flex-col rounded-md shadow-md">
             <a
               href={repo.html_url}
@@ -80,6 +117,11 @@ export default function Projects({ isVisible, delay }: ProjectsProps) {
                 </h3>
                 <p className="line-clamp-3 text-sm font-normal text-secondary">
                   {repo.description}
+                  {repo.count && (
+                    <span className="text-md mt-1 flex items-center gap-1 font-medium text-secondary">
+                      <SiDiscord /> {repo.count.toLocaleString()} servers
+                    </span>
+                  )}
                 </p>
               </div>
             </a>
