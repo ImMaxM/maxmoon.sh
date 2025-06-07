@@ -40,7 +40,7 @@ const Music = () => {
 
   return (
     <div>
-      {track ? (
+      {track?.isNowPlaying ? (
         <div
           className={`flex flex-row flex-wrap gap-x-4 ${isLoaded ? "animate-fade-in-small" : "opacity-0"}`}
         >
