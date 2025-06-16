@@ -61,10 +61,12 @@ const Music = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {track.name}{" "}
-              {track.album != track.name && track.album
-                ? `- ${track.album}`
-                : ""}
+              {(() => {
+                const fullText = `${track.name}${track.album != track.name && track.album ? ` - ${track.album}` : ""}`;
+                return fullText.length > 50
+                  ? `${fullText.substring(0, 47)}...`
+                  : fullText;
+              })()}
             </a>
             <span className="text-[12px] text-secondary">{track.artist}</span>
           </div>
